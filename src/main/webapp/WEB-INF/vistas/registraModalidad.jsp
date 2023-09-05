@@ -122,6 +122,11 @@ $('#id_form').bootstrapValidator({
                 	message:'El nombre es de 5 a 100 caracteres',
                 	min : 5,
                 	max : 100
+                },
+                remote :{
+                	delay   : 1000,
+                	url     : 'buscaPorNombre',
+                	message : 'El nombre ya existe'
                 }
             }
         },
@@ -204,8 +209,8 @@ $('#id_form').bootstrapValidator({
                     message: 'La sede es un campo obligatorio'
                 },
                 stringLength :{
-                	message:'La sede es de 5 a 20 caracteres',
-                	min : 5,
+                	message:'La sede es de 3 a 20 caracteres',
+                	min : 3,
                 	max : 20
                 }
             }
